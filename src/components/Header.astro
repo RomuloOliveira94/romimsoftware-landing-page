@@ -1,7 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
 import { Image } from "astro:assets";
-import Logo from "../assets/romimsoftwarelogo.jpeg";
+import Logo from "../assets/logo-romim-soft.png";
 
 const navLinks = [
   {
@@ -27,10 +27,10 @@ const navLinks = [
 ];
 ---
 
-<header class="w-full fixed z-10 border border-solid  border-b-gray-800">
-  <nav class="bg-white border-gray-200 dark:bg-[#FCEBCF] px-[2rem] opacity-99">
+<header class="w-full bg-gradient-to-l from-primary">
+  <nav class="opacity-99 container ">
     <div
-      class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      class=" flex flex-wrap items-center justify-between py-4"
     >
       <a
         href="https://flowbite.com/"
@@ -39,17 +39,17 @@ const navLinks = [
         <Image
           src={Logo}
           alt={"Romin Software"}
-          class="w-10 h-10 rounded-full"
+          class="w-14 bg-transparent"
         />
         <span
-          class="self-center text-2xl font-semibold whitespace-nowrap gray-700"
+          class="self-center text-2xl lg:text-3xl font-semibold whitespace-nowrap terxt-gray-700"
           >Romin Software</span
         >
       </a>
       <button
         data-collapse-toggle="navbar-default"
         type="button"
-        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-500 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-slate-300 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-500 dark:hover:bg-slate-300 dark:focus:ring-gray-600"
         aria-controls="navbar-default"
         aria-expanded="false"
       >
@@ -71,13 +71,13 @@ const navLinks = [
       </button>
       {
         navLinks && (
-          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-[#FCEBCF] md:dark:bg-[#FCEBCF] dark:border-gray-700">
+          <div class="hidden w-full lg:block lg:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
               {navLinks.map((link) => (
                 <li>
                   <a
                     href={link.href}
-                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-800 md:dark:hover:text-blue-500 dark:hover:bg-[#FCEBCF] dark:hover:text-white md:dark:hover:bg-transparent"
+                    class="text-2xl block py-2 px-3 text-gray-800 rounded hover:text-slate-500 md:border-0  md:p-0"
                   >
                     {link.name}
                   </a>
