@@ -6,9 +6,9 @@ import heroImage from "../../assets/hero/hero-img.png";
 
 <section aria-label="Hero Section" class="bg-gradient-to-l from-primary">
   <div
-    class="container flex items-center justify-between flex-wrap lg:gap-0 h-screen"
+    class="container grid grid-cols-2 h-screen gap-6 max-md:grid-cols-1"
   >
-    <div class="flex flex-col gap-3 md:w-2/5 mx-2 md:mx-0 md:text-start">
+    <div class="self-center grid gap-3">
       <h1 class="text-4xl lg:text-6xl font-bold my-2">
         A Romim Software tem a solução tecnológica para sua empresa.
       </h1>
@@ -18,12 +18,12 @@ import heroImage from "../../assets/hero/hero-img.png";
         presença online!
       </h2>
       <CtaButton text="Solicitar orçamento" link="http://google.com" />
-      <Image
-        src={heroImage}
-        alt="Astro Logo"
-        format="avif"
-        class={"xl:w-[600px] drop-shadow-xl"}
-      />
     </div>
+    <Image
+      src={heroImage}
+      alt="Astro Logo"
+      format="avif"
+      class={"drop-shadow-xl object-cover self-center"}
+    />
   </div>
 </section>
