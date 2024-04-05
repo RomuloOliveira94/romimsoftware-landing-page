@@ -90,7 +90,7 @@ import { Icon } from "astro-icon/components";
           >
             Mande aqui sua mensagem.
           </h3>
-          <form>
+          <form method="post" action="api/send-contact-form">
             <div class="mb-[22px]">
               <label
                 for="fullName"
@@ -100,7 +100,8 @@ import { Icon } from "astro-icon/components";
               <input
                 type="text"
                 name="fullName"
-                placeholder="João da Silva"
+                placeholder="seu nome"
+                required
                 class="bg-transparent w-full text-body-color dark:text-dark-6 placeholder:text-body-color/60 border-0 border-b border-[#f1f1f1] dark:border-dark-3 pb-3 focus:border-primary focus:outline-none"
               />
             </div>
@@ -113,6 +114,7 @@ import { Icon } from "astro-icon/components";
               <input
                 type="email"
                 name="email"
+                required
                 placeholder="example@seuemail.com"
                 class="bg-transparent w-full text-body-color dark:text-dark-6 placeholder:text-body-color/60 border-0 border-b border-[#f1f1f1] dark:border-dark-3 pb-3 focus:border-primary focus:outline-none"
               />
@@ -121,11 +123,12 @@ import { Icon } from "astro-icon/components";
               <label
                 for="phone"
                 class="block text-sm text-body-color dark:text-dark-6 mb-4"
-                >Telefone*</label
+                >Telefone/WhatsApp*</label
               >
               <input
                 type="text"
                 name="phone"
+                required
                 placeholder="com ddd"
                 class="bg-transparent w-full text-body-color dark:text-dark-6 placeholder:text-body-color/60 border-0 border-b border-[#f1f1f1] dark:border-dark-3 pb-3 focus:border-primary focus:outline-none"
               />
@@ -137,6 +140,7 @@ import { Icon } from "astro-icon/components";
                 >Mensagem*</label
               >
               <textarea
+                required
                 name="message"
                 rows="8"
                 placeholder="escreva sua mensagem aqui"
