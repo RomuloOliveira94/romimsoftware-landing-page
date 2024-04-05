@@ -1,3 +1,7 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
 <!-- ====== Contact Start ====== -->
 <section id="contact" class="relative py-20 md:py-[120px]">
   <div class="absolute top-0 left-0 -z-[1] w-full"></div>
@@ -10,9 +14,13 @@
       <div class="w-full px-4 lg:w-7/12 xl:w-8/12">
         <div class="ud-contact-content-wrapper">
           <div class="ud-contact-title mb-12 lg:mb-[150px]">
-            <span class="mb-6 block font-medium text-white text-6xl">
+            <div class="mb-6 block font-medium text-white text-6xl">
+              <Icon
+                name="triangle"
+                class="w-24 h-24 text-red-700 rotate-90 mb-6"
+              />
               Fale conosco.
-            </span>
+            </div>
             <h2 class="text-4xl font-semibold text-white">
               Vamos conversar sobre o seu projeto.
             </h2>
@@ -35,7 +43,9 @@
                 </svg>
               </div>
               <div>
-                <h5 class="mb-[18px] text-lg font-semibold text-white md:text-black">
+                <h5
+                  class="mb-[18px] text-lg font-semibold text-white md:text-black"
+                >
                   Onde estamos?
                 </h5>
                 <p class="text-base text-white md:text-black">
@@ -57,10 +67,14 @@
                 </svg>
               </div>
               <div>
-                <h5 class="mb-[18px] text-lg font-semibold text-white md:text-black">
+                <h5
+                  class="mb-[18px] text-lg font-semibold text-white md:text-black"
+                >
                   Como podemos ajudar?
                 </h5>
-                <p class="text-base text-white md:text-black">contato@starksoftware.com</p>
+                <p class="text-base text-white md:text-black">
+                  contato@starksoftware.com
+                </p>
               </div>
             </div>
           </div>
