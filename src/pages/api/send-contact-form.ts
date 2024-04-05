@@ -1,7 +1,7 @@
 import type { APIRoute } from "astro";
 import { Resend } from "resend";
 
-export const POST: APIRoute = async ({ request }) => {
+export const POST: APIRoute = async ({ request, redirect }) => {
   const formData = await request.formData();
   const name = formData.get("fullName");
   const email = formData.get("email");
@@ -30,7 +30,5 @@ export const POST: APIRoute = async ({ request }) => {
     `,
   });
 
-  return new Response("Email sent!", {
-    status: 200,
-  });
+  return redirect("/");
 };
