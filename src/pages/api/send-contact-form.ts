@@ -8,7 +8,7 @@ export const POST: APIRoute = async ({ request, redirect }) => {
   const message = formData.get("message");
   const phone = formData.get("phone");
 
-  const resend = new Resend("re_V67L3zo8_HwPEzerC8qbCUZEBWZgDw7Xn");
+  const resend = new Resend(import.meta.env.RESEND_KEY);
 
   if (!name || !email || !message || !phone) {
     return new Response("Missing required fields", {
