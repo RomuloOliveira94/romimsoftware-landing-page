@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import Logo from "../assets/logo-romim-soft.png";
+import Logo from "../assets/stark-soft-logo-black-bg-transparent.png";
 
 const footerLinks = [
   {
@@ -73,7 +73,7 @@ const footerLinks = [
 
 <!-- ====== Footer Section Start -->
 <footer
-  class="wow fadeInUp relative z-10 bg-primary pt-20 lg:pt-[100px]"
+  class="wow fadeInUp relative z-10 bg-black pt-20 lg:pt-[100px]"
   data-wow-delay=".15s"
 >
   <div class="container">
@@ -84,10 +84,10 @@ const footerLinks = [
             <Image
               src={Logo}
               alt={"Romin Software"}
-              class="w-14 bg-transparent"
+              class="w-32 bg-transparent"
             />
           </a>
-          <p class="mb-8 max-w-[270px] text-base">
+          <p class="mb-8 max-w-[270px] text-white">
             Criamos experiências digitais para marcas e empresas utilizando
             tecnologia.
           </p>
@@ -95,7 +95,7 @@ const footerLinks = [
             <a
               id="footer-facebook"
               href="javascript:void(0)"
-              class="px-3 hover:"
+              class="px-3 text-white hover:text-red-700"
             >
               <svg
                 width="22"
@@ -113,7 +113,7 @@ const footerLinks = [
             <a
               id="footer-twitter"
               href="javascript:void(0)"
-              class="px-3 hover:"
+              class="px-3 text-white hover:text-red-700"
             >
               <svg
                 width="22"
@@ -131,7 +131,7 @@ const footerLinks = [
             <a
               id="footer-instagram"
               href="javascript:void(0)"
-              class="px-3 hover:"
+              class="px-3 text-white hover:text-red-700"
             >
               <svg
                 width="22"
@@ -155,7 +155,7 @@ const footerLinks = [
             <a
               id="footer-linkedin"
               href="javascript:void(0)"
-              class="px-3 hover:"
+              class="px-3 text-white hover:text-red-700"
             >
               <svg
                 width="22"
@@ -175,7 +175,7 @@ const footerLinks = [
       </div>
       <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
         <div class="mb-10 w-full">
-          <h4 class="mb-9 text-lg font-semibold">
+          <h4 class="mb-9 text-lg font-semibold text-white">
             {footerLinks[0].header}
           </h4>
           <ul>
@@ -186,7 +186,7 @@ const footerLinks = [
                     <li>
                       <a
                         href={link.href}
-                        class="mb-3 inline-block text-base  hover:text-primary"
+                        class="mb-3 inline-block text-white  hover:text-red-700"
                         target={link.isExternal ? "_blank" : undefined}
                         rel={link.isExternal ? "noopener" : undefined}
                       >
@@ -202,7 +202,7 @@ const footerLinks = [
       </div>
       <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12">
         <div class="mb-10 w-full">
-          <h4 class="mb-9 text-lg font-semibold">
+          <h4 class="mb-9 text-lg font-semibold text-white">
             {footerLinks[1].header}
           </h4>
           <ul>
@@ -213,7 +213,7 @@ const footerLinks = [
                     <li>
                       <a
                         href={link.href}
-                        class="mb-3 inline-block text-base  hover:text-primary"
+                        class="mb-3 inline-block text-white  hover:text-red-700"
                         target={link.isExternal ? "_blank" : undefined}
                         rel={link.isExternal ? "noopener" : undefined}
                       >
@@ -229,7 +229,7 @@ const footerLinks = [
       </div>
       <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12">
         <div class="mb-10 w-full">
-          <h4 class="mb-9 text-lg font-semibold">
+          <h4 class="mb-9 text-lg font-semibold text-white">
             {footerLinks[2].header}
           </h4>
           <ul>
@@ -240,7 +240,7 @@ const footerLinks = [
                     <li>
                       <a
                         href={link.href}
-                        class="mb-3 inline-block text-base  hover:text-primary"
+                        class="mb-3 inline-block text-white  hover:text-red-700"
                         target={link.isExternal ? "_blank" : undefined}
                         rel={link.isExternal ? "noopener" : undefined}
                       >
@@ -260,7 +260,7 @@ const footerLinks = [
   <div
     class="mt-12 border-t border-[#8890A4] border-opacity-40 py-8 lg:mt-[60px]"
   >
-    <div class="container">
+    <div class="container text-white">
       <div class="-mx-4 flex flex-wrap">
         <div class="w-full px-4 md:w-2/3 lg:w-1/2">
           <div class="my-1">
