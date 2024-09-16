@@ -15,9 +15,9 @@ export const POST: APIRoute = async ({ request, redirect }) => {
       status: 400,
     });
   }
-  resend.emails.send({
-    from: "Contato para Stark Software <onboarding@resend.dev>",
-    to: "romuloffall@gmail.com",
+  const send = await resend.emails.send({
+    from: "Contato para Stark Software <contato@starksoftware.tech>",
+    to: "contato@starksoftware.tech",
     subject: "Quero fazer um orçamento!",
     html: `
     <div style="font-family: Arial, sans-serif;display: grid; padding: 10px;border: 1px solid black; border-radius: 25px;">
@@ -29,6 +29,8 @@ export const POST: APIRoute = async ({ request, redirect }) => {
     </div>
     `,
   });
+
+  console.log(send);
 
   return redirect("/");
 };
