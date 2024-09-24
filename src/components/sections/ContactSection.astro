@@ -112,12 +112,11 @@ import { Icon } from "astro-icon/components";
               <label
                 for="email"
                 class="block text-sm text-body-color dark:text-dark-6 mb-4"
-                >Email*</label
+                >Email</label
               >
               <input
                 type="email"
                 name="email"
-                required
                 placeholder="example@seuemail.com"
                 class="bg-transparent w-full text-body-color dark:text-dark-6 placeholder:text-body-color/60 border-0 border-b border-[#f1f1f1] dark:border-dark-3 pb-3 focus:border-primary focus:outline-none"
               />
@@ -129,8 +128,8 @@ import { Icon } from "astro-icon/components";
                 >Telefone/WhatsApp*</label
               >
               <input
-                type="text"
-                name="phone"
+                type="tel"
+                name="phone"                
                 required
                 placeholder="com ddd"
                 class="bg-transparent w-full text-body-color dark:text-dark-6 placeholder:text-body-color/60 border-0 border-b border-[#f1f1f1] dark:border-dark-3 pb-3 focus:border-primary focus:outline-none"
