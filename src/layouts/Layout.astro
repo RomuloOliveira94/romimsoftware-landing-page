@@ -11,19 +11,18 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="pt_BR">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <meta name="title" content="Stark Software - Sistemas Profissionais">
     <meta name="description" content="Fazemos seu software com qualidade e preço justo!">
   </head>
   <body>
     <Header />
-    <main>
+    <main class="relative pt-28 md:pt-0">
       <slot />
       <WhatsAppButton />
     </main>

@@ -27,10 +27,8 @@ const navLinks = [
 ---
 
 <header class="w-full bg-black fixed z-50">
-  <nav class="opacity-99 container ">
-    <div
-      class=" flex flex-wrap items-center justify-between py-4"
-    >
+  <nav class="opacity-99 container">
+    <div class="flex flex-wrap items-center justify-between py-4">
       <a
         href="https://flowbite.com/"
         class="flex items-center space-x-3 rtl:space-x-reverse"
@@ -76,6 +74,7 @@ const navLinks = [
               {navLinks.map((link) => (
                 <li>
                   <a
+                    data-collapse-toggle="navbar-default"
                     href={link.href}
                     class="text-2xl block py-2 px-3 text-white rounded hover:text-red-700 md:border-0  md:p-0"
                   >
